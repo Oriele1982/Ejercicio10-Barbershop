@@ -64,7 +64,14 @@ body{
     text-align: center;
     font-size: 70px;
   }
-
+@media only screen and (max-width: 600px){
+    .barbershop_jumbotron{
+      background-image: url(../img/post-image.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 680px;
+    }
+}
 /* ENTRADA */
 .barbershop__intro{
     font-style: normal;
@@ -167,8 +174,9 @@ body{
 /* PERFIL */
 .barbershop__profile{
     width: 80%;
-    border-top: 1px solid #707070;
+    border: 1px solid #707070;
     margin: 100px 0 0 130px;
+    padding-bottom: 15px;
 }
 
   .barbershop_icon-line{
@@ -185,47 +193,190 @@ body{
     padding: 7px;
   }
 
-
-.barbershop__person{
-
-}  
-
   .barbershop_naomi{
-
+      width: 25%;
+      border-radius: 100px;
+      border: 1px solid #707070;
+      display: inline-block;
   }
 
   .barbershop_name{
-
+      display: inline-block;
+      font-family:"Playfair Display";
+      font-style: italic;
+      font-weight: 700;
+      font-size: 25px;
+      margin:0 0 30px 15px;
   }
 
   .barbershop_web{
-
+      font-size: 18px;
+      color: #707070;
+      margin: -70px 0 0 210px;
   }
 
   .barbershop_reseña{
+      width: 40%;
+      font-size: 12px;
+      color: #707070;
+      display: inline-block;
+      margin: -90px 0 0 600px;
 
   }
   
+@media only screen and (max-width: 600px){
+    .barbershop__profile{
+      width: 80%;
+      border: 1px solid #707070;
+      margin: 100px 0 0 50px;
+  }
+
+    .barbershop_naomi{
+      width: 40%;
+      border-radius: 100px;
+      border: 1px solid #707070;
+      margin: 20px 0 0 130px;
+  }
+    
+    .barbershop_name{
+      display: inline-block;
+      font-family:"Playfair Display";
+      font-style: italic;
+      font-weight: 700;
+      font-size: 40px;
+      margin: 30px 0 0 120px;
+  }
+
+  .barbershop_web{
+      font-size: 18px;
+      color: #707070;
+      margin: 30px 0 0 160px;
+  }
+
+  .barbershop_reseña{
+      display: none;
+  }
+
+};
 
 /* ANTERIOR Y SIGUIENTE */
-.barbershop__entrada{
-
+section.barbershop__entrada{
+  height: 180px;
 }
-  
+  .row_entrada{
+    width: 80%;
+    padding: 30px 0;
+    height: 170px;
+    background-color: #E6E7E7;
+    color: #FFFFFF;
+    margin-left: 130px;
+  }
   .barbershop_anterior{
-
+      margin: 40px 70px 0 0 ;
+      display: inline-block;
   }
 
-  .barbershop_buttons{
+    .fa-caret-left{
+      font-size: 25px;
+      color: #FFFFFF;
+      background-color: #707070;
+      padding: 5px 12px;
+      border-radius: 20px;
+      text-align:center;
 
+    }
+
+    .barbershop_newleft{
+      font-size: 20px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+  .barbershop_siguiente{
+      display: inline-block;
+      margin: -45px 0 0 180px;
+      float: right;
+      clear: both;
   }
+    .barbershop_newright{
+      font-size: 20px;
+      display: inline-block;
+      margin-left: 150px;
+    }
 
+    .fa-caret-right{
+      font-size: 25px;
+      color: #FFFFFF;
+      background-color: #707070;
+      padding: 5px 12px;
+      border-radius: 20px;
+      text-align:center;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+@media only screen and (max-width: 600px){
+    .row_entrada{
+      width: 80%;
+      padding: 30px 0;
+      height: 170px;
+      background-color: #E6E7E7;
+      color: #FFFFFF;
+      margin-left: 50px;
+    }
+    
+    .barbershop_anterior{
+      margin: 40px 0 0 70px;
+      display: inline-block;
+  }
+      
+      .fa-caret-left{
+        font-size: 25px;
+        color: #FFFFFF;
+        background-color: #707070;
+        padding: 5px 12px;
+        border-radius: 20px;
+        text-align:center;
+
+      }
+
+      .barbershop_newleft{
+        display: none;
+      }
+
+    .barbershop_siguiente{
+      display: inline-block;
+      margin: 40px 70px 0 0;
+      float: right;
+      clear: both;
+  }
+    .barbershop_newright{
+      display: none;
+    }
+
+    .fa-caret-right{
+      font-size: 25px;
+      color: #FFFFFF;
+      background-color: #707070;
+      padding: 5px 12px;
+      border-radius: 20px;
+      text-align:center;
+      display: inline-block;
+      margin-left: 5px;
+    }  
+};
 /* FOOTER */
 
 .barbershop__footer{
-
+    margin: 0;
 }
 
-  .barbershop_logo-footer{
+  .row_footer{
+    background-color: #121619;
+    padding: 60px 0;
+  }
 
+  .barbershop_logo-footer{
+      width: 8%;
+      margin-left: 45%;
   }
